@@ -1,0 +1,35 @@
+body {
+    background-color: #93b9cc;
+    display: grid;
+    gap: 2rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    padding: 10px;
+    background-color: #83a4b4;
+    line-height: 0.8;
+    z-index: 10;
+}
+
+#nav-menu-button {
+    width: 29px;
+}
+
+menu {
+    display: grid;
+    position: fixed;
+    padding-right: 10px;
+    background-color: #83a4b4;
+    right: 0;
+    top: -19%;
+    width: 100%;
+    text-align: right;
+    transition: top .5s;
+    z-index: 9;
+}

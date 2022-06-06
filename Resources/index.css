@@ -1,0 +1,18 @@
+#title {
+    text-align: center;
+    margin-top: 50px;
+    opacity: 0;
+    transition: opacity 2s ease 1s;
+}
+
+#title>h1 {
+    line-height: 3.2rem;
+}
+
+#title>h2, #title>.h2-green {
+    font-size: 1.1rem;
+}
+
+.h2-green {
+    color: #2a7561;
+}
