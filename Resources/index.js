@@ -16,4 +16,6 @@ const title = document.getElementById('title');
 
 document.body.onload = function () { 
     title.style.opacity = '100%';
+    title.style.top = '30px';
+    title.style.transform = 'translate(-50%, 0)';
 }

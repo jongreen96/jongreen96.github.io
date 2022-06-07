@@ -1,3 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    font-size: 3rem;
+    letter-spacing: 0px;
+    font-kerning: normal;
+}
+
+h1, .h1-green {
+    font-size: 4rem;
+}
+
+.h1-green {
+    color: #2a7561;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
 body {
     background-color: #93b9cc;
     display: grid;
