@@ -1,14 +1,10 @@
 #title {
     text-align: center;
-    margin-top: 50px;
     opacity: 0;
-    min-width: 100%;
-    position: fixed;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: opacity 2s ease 1s, transform 2s ease 4s, top 2s ease 4s;
-    border: 1px solid red
+    position: absolute;
+    width: 100%;
+    top: 40%;
+    transition: top 1.5s ease 4s, opacity 2s ease 1s, margin-top 1.5s ease 4s;
 }
 
 #title>h1 {
@@ -21,4 +17,18 @@
 
 .h2-green {
     color: #2a7561;
+}
+
+main {
+    opacity: 0%;
+    transition: opacity 2s ease 5s;
+    padding: 10px;
+    display: grid;
+    gap: 2rem;
+    margin-top: 250px;
+}
+
+.grid-container {
+    display: grid;
+    gap: 2rem;
 }

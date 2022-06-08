@@ -13,9 +13,17 @@ navButton.onclick = function() {
 }
 
 const title = document.getElementById('title');
+const main = document.getElementById('main');
 
 document.body.onload = function () { 
     title.style.opacity = '100%';
-    title.style.top = '30px';
-    title.style.transform = 'translate(-50%, 0)';
+    title.style.top = '0';
+    title.style.marginTop = '100px';
+
+    main.style.opacity = '100%';
+}
+
+document.body.onclick = function() {
+    title.style.transition = 'none';
+    main.style.transition = 'none';
 }

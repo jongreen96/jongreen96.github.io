@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p, ul {
     font-family: 'Bebas Neue', 'Arial', cursive;
     color: white;
     font-size: 3rem;
-    letter-spacing: 0px;
-    font-kerning: normal;
+}
+
+p, ul {
+    font-family: 'Roboto';
+    font-size: 1rem;
 }
 
 h1, .h1-green {
@@ -22,6 +25,17 @@ h2 {
 
 h3 {
     font-size: 2rem;
+}
+
+
+.pointer::before {
+    content: '';
+    display: block;
+    background: url('./Icons/Arrow-icon.svg') no-repeat;
+    width: 1.5rem;
+    height: 1.9rem;
+    float: left;
+    margin-top: 0.5rem;
 }
 
 body {
