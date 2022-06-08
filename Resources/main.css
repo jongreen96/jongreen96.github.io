@@ -4,6 +4,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
     font-family: 'Bebas Neue', 'Arial', cursive;
     color: white;
     font-size: 3rem;
+    letter-spacing: normal;
 }
 
 p, ul {
