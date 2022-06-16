@@ -4,7 +4,7 @@
     position: absolute;
     width: 100%;
     top: 40%;
-    transition: top 1.5s ease 4s, opacity 2s ease 1s, margin-top 1.5s ease 4s;
+    transition: top 1s ease 2.5s, opacity 1s ease .5s, margin-top 1s ease 2.5s;
 }
 
 #title>h1 {
@@ -21,14 +21,39 @@
 
 main {
     opacity: 0%;
-    transition: opacity 2s ease 5s;
+    transition: opacity 2s ease 2.7s;
     padding: 10px;
     display: grid;
     gap: 2rem;
     margin-top: 250px;
 }
 
+.project {
+    display: grid;
+    gap: .5rem;
+    justify-content: center;
+}
+
+.project img {
+    border-radius: .5rem;
+}
+
 .grid-container {
     display: grid;
     gap: 2rem;
+}
+
+#contact {
+    text-align: center;
+    display: grid;
+    justify-content: center;
+}
+
+#contact h1 {
+    line-height: 3.2rem;
+    width: 300px;
+}
+
+#contact h3 {
+    justify-self: center;
 }
