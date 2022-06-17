@@ -1,7 +1,7 @@
 const weatherUrl = 'https://api.openweathermap.org/data/3.0/onecall?';
 const locUrl = 'https://api.geoapify.com/v1/geocode/reverse?';
 const weatherApiKey = '&appid=86ad43d8ec41601957cd2489d3bf7f96';
-const locApiKey = '&apiKey=4794fcae4c60457194a6bfeb5922a0b6'
+const locApiKey = '&apiKey=4794fcae4c60457194a6bfeb5922a0b6';
 
 let weatherObj;
 let locObj;
@@ -60,3 +60,4 @@ function drawResults(location) {
     sunrise.innerHTML = weatherObj.current.sunrise;
     sunset.innerHTML = weatherObj.current.sunset;
 }
+

@@ -20,7 +20,7 @@ const main = document.getElementById('main');
 document.body.onload = () => { 
     title.style.opacity = '100%';
     title.style.top = '0';
-    title.style.marginTop = '100px';
+    title.style.marginTop = '15vh';
 
     main.style.opacity = '100%';
 }

@@ -7,16 +7,33 @@
     transition: top 1s ease 2.5s, opacity 1s ease .5s, margin-top 1s ease 2.5s;
 }
 
-#title>h1 {
-    line-height: 3.2rem;
+#title h1, .h1-green{
+    font-size: 20vw;
+    line-height: 16vw;
 }
 
-#title>h2, #title>.h2-green {
-    font-size: 1.1rem;
+#contact h1 {
+    line-height: 3.4rem;
 }
 
-.h2-green {
-    color: #2a7561;
+#title h2, #title .h2-green {
+    font-size: 6vw;
+}
+
+@media only screen and (min-width: 1000px) {
+    #title h1, .h1-green{
+        font-size: 200px;
+        line-height: 160px;
+    }
+
+    #title h2, #title .h2-green {
+        font-size: 60px;
+    }
+
+    #contact h1 {
+        font-size: 200px !important;
+        line-height: 160px !important;
+    }
 }
 
 main {
@@ -24,14 +41,21 @@ main {
     transition: opacity 2s ease 2.7s;
     padding: 10px;
     display: grid;
-    gap: 2rem;
-    margin-top: 250px;
+    gap: 5rem;
+    margin-top: 50vh;
+    justify-content: center;
+    max-width: 1300px;
+    justify-self: center;
 }
 
 .project {
     display: grid;
     gap: .5rem;
     justify-content: center;
+    box-shadow: 0 0 1rem grey;
+    padding: 10px;
+    border-radius: 1rem;
+    max-width: 300px;
 }
 
 .project img {
@@ -40,8 +64,11 @@ main {
 
 .grid-container {
     display: grid;
-    gap: 2rem;
+    gap: 1rem;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, 300px);
 }
+
 
 #contact {
     text-align: center;
@@ -50,8 +77,9 @@ main {
 }
 
 #contact h1 {
-    line-height: 3.2rem;
-    width: 300px;
+    font-size: 20vw;
+    line-height: 16vw;
+    max-width: 1000px;
 }
 
 #contact h3 {
