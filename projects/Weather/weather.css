@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 0.05;
+    color: white;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    text-shadow: 0px 0px 10px rgba(0,0,0,0.6);
+}
+
+body>* {
+    height: fit-content;
+}
+
+main {
+    overflow: hidden;
+}
+
+.bg-lightgrey {
+    background-color: hsla(0, 0%, 0%, 0.7);
+}
+
+
+/* CURRENT */
+.current-container {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(1fr, auto-fit);
+    width: 100%;
+    justify-content: center;
+    overflow: none;
+}
+
+.current-temp h1 {
+    font-size: 4rem;
+}
+
+.current-details {
+    text-align: center;
+    width:100%;
+}
+
+@media only screen and (min-width: 400px) {
+    .current-container {
+        grid-auto-flow: column;
+        gap: 1rem;
+    }
+
+    .current-details {
+        text-align: left;
+    }
+}
+
+/* RAIN */
+.rain {
+    height: 84%;
+}
+
+.rain-container {
+    display: flex;
+    align-items: baseline;
+}
+
+.rain-container div{
+    width: calc(100% / 60);
+    height: 100px;
+    background-color: white;
+}
+
+.graph-container {
+    height: 100px;
+}
+
+.timeline {
+    display: flex;
+    justify-content: space-between;
+    height: 20px;
+    transform: translate(0, -14px);
+    margin-right: 1rem;
+}
+
+.percent {
+    float: left;
+    transform: translate(0, -25px);
+}
+
+/* HOURLY & DAILY*/
+.hour-container, .day-container {
+    display: flex;
+    justify-content: center;
+}
+
+.hour-container>div>img {
+    width: 50%;
+}
+
+.day-container>div>img {
+    width: 50%;
+}
